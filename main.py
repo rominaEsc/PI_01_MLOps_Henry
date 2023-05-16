@@ -63,11 +63,12 @@ def productoras(productora:str):
 @app.get('/retorno/{pelicula}')
 def retorno(pelicula:str):
     '''Ingresas la pelicula, retornando la inversion, la ganancia, el retorno y el año en el que se lanzo'''
-    inversion = movies[movies.title == pelicula].iloc[0,12] #Revisar que sea la columna correspondiente
-    ganacia = movies[movies.title == pelicula].iloc[0,13]
+    # inversion = movies[movies.title == pelicula].iloc[0,12] #Revisar que sea la columna correspondiente
+    # ganacia = movies[movies.title == pelicula].iloc[0,13]
     # retorno = movies[movies.title == pelicula].iloc[0,14]
-    anio_lanzamiento = movies[movies.title == pelicula].iloc[0,9]
-    return {'pelicula':pelicula, 'inversion':inversion, 'ganacia':ganacia, 'anio':anio_lanzamiento}
+    # anio_lanzamiento = movies[movies.title == pelicula].iloc[0,9]
+    return {'pelicula':pelicula}
+# 'inversion':inversion, 'ganacia':ganacia, 'anio':anio_lanzamiento
 # 'retorno':retorno,
 # # ML
 # @app.get('/recomendacion/{titulo}')
