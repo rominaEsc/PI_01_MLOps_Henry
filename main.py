@@ -66,8 +66,8 @@ def retorno(pelicula:str):
     inversion = movies[movies.title == pelicula].iloc[0,12] # budget
     ganacia = movies[movies.title == pelicula].iloc[0,13] # revenue
     retorno = movies[movies.title == pelicula].iloc[0,14] # return
-    # anio_lanzamiento = movies[movies.title == pelicula].iloc[0,9] # release_year
-    return {'pelicula':pelicula,'inversion':inversion, 'ganacia':ganacia,'retorno':retorno}
+    anio_lanzamiento = movies[movies.title == pelicula].iloc[0,9] # release_year
+    return {'pelicula':pelicula,'inversion':inversion, 'ganacia':ganacia,'retorno':retorno,'anio':anio_lanzamiento}
 
     # return {'pelicula':pelicula, 'inversion':inversion, 'ganacia':ganacia,'retorno':retorno, 'anio':anio_lanzamiento}
 
