@@ -64,10 +64,10 @@ def productoras(productora:str):
 def retorno(pelicula:str):
     '''Ingresas la pelicula, retornando la inversion, la ganancia, el retorno y el año en el que se lanzo'''
     inversion = movies[movies.title == pelicula].iloc[0,12] # budget
-    # ganacia = movies[movies.title == pelicula].iloc[0,13] # revenue
+    ganacia = movies[movies.title == pelicula].iloc[0,13] # revenue
     # retorno = movies[movies.title == pelicula].iloc[0,14] # return
     # anio_lanzamiento = movies[movies.title == pelicula].iloc[0,9] # release_year
-    return {'pelicula':pelicula,'inversion':inversion}
+    return {'pelicula':pelicula,'inversion':inversion, 'ganacia':ganacia}
 
     # return {'pelicula':pelicula, 'inversion':inversion, 'ganacia':ganacia,'retorno':retorno, 'anio':anio_lanzamiento}
 
