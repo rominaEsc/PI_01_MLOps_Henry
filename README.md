@@ -1,4 +1,10 @@
-# PI_01_MLOps_Henry
+
+# <h1 align=center> **PROYECTO INDIVIDUAL Nº1** </h1>
+# <p align=center><img src=https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png><p>
+
+# <h1 align=center>**`Machine Learning Operations (MLOps)`**</h1>
+
+<p align="center">
 
 ## Objetivos:
 Los objetivo de este MPV son:
@@ -19,7 +25,7 @@ Los objetivo de este MPV son:
 
 - Eliminar las columnas que no serán utilizadas, video,imdb_id,adult,original_title,vote_count,poster_path y homepage.
 
-_Estas transformaciones se realizaron en el archivo 1_ETL.ipynb_
+_Estas transformaciones se realizaron en el archivo 1_ETL.ipynb. Este crea, en la carpeta data, los datasets a partir del archivo movies_Dataset.csv_ 
 
 ### Desarrollo API:
 Crear 6 funciones para los endpoints que se consumirán en la API, que deben tener un decorador por cada una (@app.get(‘/’)).
@@ -59,3 +65,5 @@ _Pendiente_
 Realizar un video mostrando el resultado de las consultas propuestas y de tu modelo de ML entrenado!
 
 _ Video Explicativo del avance del proyecto_
+ 
+
