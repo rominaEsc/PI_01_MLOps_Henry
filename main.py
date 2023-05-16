@@ -67,8 +67,8 @@ def retorno(pelicula:str):
     ganacia = movies[movies.title == pelicula].iloc[0,13]
     # retorno = movies[movies.title == pelicula].iloc[0,14]
     anio_lanzamiento = movies[movies.title == pelicula].iloc[0,9]
-    return {'pelicula':pelicula, 'inversion':inversion, 'ganacia':ganacia,'retorno':retorno, 'anio':anio_lanzamiento}
-
+    return {'pelicula':pelicula, 'inversion':inversion, 'ganacia':ganacia, 'anio':anio_lanzamiento}
+# 'retorno':retorno,
 # # ML
 # @app.get('/recomendacion/{titulo}')
 # def recomendacion(titulo:str):
