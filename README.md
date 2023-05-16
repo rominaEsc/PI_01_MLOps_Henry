@@ -6,8 +6,11 @@
 
 <p align="center">
 
+## Rol a desarrollar:
+El rol a desarrollar es el de un Data Scientist que comenzo a trabajar en una start-up que provee servicios de agregación de plataformas de streaming.  
+ 
 ## Objetivos:
-Los objetivo de este MPV son:
+Realizar un MVP que cumpla con las siguientes etapas:
 
 ### Transformaciones
 - A partir del dataset [movies_Dataset.csv](https://github.com/rominaEsc/PI_01_MLOps_Henry/blob/main/movies_dataset.csv).
