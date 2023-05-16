@@ -22,9 +22,9 @@ def peliculas_mes(mes:str):
     return {'mes':mes, 'cantidad':cantidad}
 
 #2
-@app.get('/peliculas_dis/{dis}')
+@app.get('/peliculas_dia/{dia}')
 def peliculas_dia(dia:str):
-    '''Se ingresa el dia y la funcion retorna la cantidad de peliculas que se estrebaron ese dia historicamente'''
+    '''Se ingresa el dia y la funcion retorna la cantidad de peliculas que se estrenaron ese dia historicamente'''
     assert dia in ['lunes','martes','miercoles','jueves', 'viernes', 'sabado', 'domingo'], f'Debe ingresar el nombre del día en español(sin tilde). Ej: "miercoles"'
     cantidad  = len(release_date[release_date['day_name']==dia])
     return {'dia':dia, 'cantidad':cantidad}
